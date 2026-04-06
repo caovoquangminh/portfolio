@@ -33,7 +33,7 @@
     & p
     {
         margin-top: 12px;
-        color: var(--n--500);
+        color: var(--n-500);
         max-width: 60ch;
     }
     
@@ -67,6 +67,16 @@
             margin-top: 8px;
             display: flex;
             gap: 12px;
+
+            &:nth-child(1) > .icons-list
+            {
+                animation: move-left 30s linear infinite;
+            }
+
+            &:nth-child(2) > .icons-list
+            {
+                animation: move-right 60s linear infinite;
+            }
         }
 
         & .icons-list
@@ -109,7 +119,7 @@
 
             & span
             {
-                background-color: var(--main-gradient-color);
+                background: var(--main-gradient-color);
                 color: transparent;
                 background-clip: text;
             }
@@ -130,7 +140,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             gap: 8px;
             margin-top: 8px;
         }

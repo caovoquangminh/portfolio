@@ -20,6 +20,21 @@
     {
         max-width: 1028px;
     }
+
+     /*Skills*/
+    .skills__grid_container
+    {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-template-rows: repeat(2, minmax(280px, auto));
+        grid-auto-rows: minmax(280px, auto);
+        
+        & .skill__grid_item
+        {
+            padding: 1rem 1rem;
+            grid-column: span 1 !important;
+            grid-row: span 1 !important;
+        }
+    }
 }
 
 /* ==========================
@@ -31,6 +46,12 @@
     .container
     {
         max-width: 1024px;
+    }
+
+    section
+    {
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
     /*Header*/
@@ -61,6 +82,18 @@
         align-items: center;
         text-align: center;
     }
+
+    /*Skills*/
+    .softSkills_badge
+    {
+        position: static !important;
+        transform: none !important;
+    }
+
+    .softSkills__book_icons
+    {
+        display: none;
+    }
 }
 
 /* ==========================
@@ -83,6 +116,9 @@
     {
         display: none;
     }
+
+   
+
 }
 
 
@@ -132,5 +168,11 @@
     .aboutMe__content_contaier
     {
         border-radius: 2rem;
+    }
+
+    /*Footer*/
+    footer
+    {
+        padding: 0;
     }
 }
